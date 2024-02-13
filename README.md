@@ -1,4 +1,4 @@
-# VendorOrder
+# HairSalon
 
 Created By: Nikkita Torres
 
@@ -18,16 +18,21 @@ The Hair Salon web application is designed to make it easier for the user to cre
 ## Setup/Installation Requirements
 
 1. Clone [this](https://github.com/NikkitaTorres/SalonProject.git) repository to your desktop.
-2. This project requires a file named "appsettings.json". Create this file at the top level directory of the project (HairSalon.Solution) by typing "touch appsettings.json" into your terminal.
-3. After creating the file, add the follwing code to the file: {
+2. Import the nikkita_torres.sql file into MySQL Workbench to re-create the database. You can rename this file, but make sure to adjust the "database=" accordingly on step 4.
+3. This project requires a file named "appsettings.json". Create this file at the top level directory of the project (HairSalon.Solution) by typing "touch appsettings.json" into your terminal.
+4. After creating the file, add the follwing code to the file: "{
   "ConnectionStrings": {
     "DefaultConnection": "Server=localhost;Port=3306;database="";uid=YOUR_USERNAME_HERE;pwd=YOUR_PASSWORD_HERE;"
   }
-}
-Make sure to replace the "" in the "database=""", "YOUR_USERNAME_HERE", and "YOUR_PASSWORD_HERE" with your own database name, username and password for MySQL Workbench.
-4. Navigate to the VendorOrder folder and run "dotnet build" in the terminal to compile the code.
-5. Use "dotnet restore" in both the VendorOrder directory to install necessary packages.
-6. Use "dotnet run" in the VendorOrder directory to run the project.
+}".
+The database="" apostrophes should be changed to whatever you named the sql file that was imported (default: nikkita_torres). Make sure to replace the "YOUR_USERNAME_HERE" and "YOUR_PASSWORD_HERE" with your own username and password for MySQL Workbench, no apostrophes needed.
+5. Navigate to the HairSalon folder and run "dotnet build" in the terminal to compile the code.
+6. Use "dotnet restore" in the HairSalon directory to install necessary packages.
+7. Use "dotnet run" in the HairSalon directory to launch the project.
+
+## Know bugs
+
+No known bugs at this time.
 
 ## License
 
