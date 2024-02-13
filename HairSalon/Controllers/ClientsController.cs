@@ -42,7 +42,6 @@ namespace HairSalon.Controllers
       return RedirectToAction("Index");
     }
 
-    //might need to change "Details" to something else
     public ActionResult Details(int id)
     {
       Client thisClient = _db.Clients

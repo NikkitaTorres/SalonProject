@@ -34,7 +34,7 @@ After you are finished with the above steps, reopen the "Navigator > Schemas tab
 The database="" apostrophes should be changed to whatever you named the sql file that was imported (default: nikkita_torres). Make sure to replace the "YOUR_USERNAME_HERE" and "YOUR_PASSWORD_HERE" with your own username and password for MySQL Workbench, no apostrophes needed.
 5. Navigate to the HairSalon folder and run "dotnet build" in the terminal to compile the code.
 6. Use "dotnet restore" in the HairSalon directory to install necessary packages.
-7. Use "dotnet run" in the HairSalon directory to launch the project.
+7. Use "dotnet watch run" in the HairSalon directory to launch the project.
 
 ## Know bugs
 
