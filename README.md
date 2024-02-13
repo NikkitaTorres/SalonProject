@@ -18,9 +18,15 @@ The Hair Salon web application is designed to make it easier for the user to cre
 ## Setup/Installation Requirements
 
 1. Clone [this](https://github.com/NikkitaTorres/SalonProject.git) repository to your desktop.
-2. Import the nikkita_torres.sql file into MySQL Workbench to re-create the database. You can rename this file, but make sure to adjust the "database=" accordingly on step 4.
+2. Import the nikkita_torres.sql file into MySQL Workbench to re-create the database. You can do this by:
+
+- Selecting "Data Import/Export" in the Navigator/Administration"
+- Select "Import from Self-Contained File" and select the "nikkita_torres" file inside of the HairSalon.Solution folder.
+- You can rename this file by clicking "New..." next to the "Default Schema to be Imported To", but make sure to adjust the "database=" accordingly on step 4.
+- Finally, click the "Start Import" button located in the bottom right.
+After you are finished with the above steps, reopen the "Navigator > Schemas tab". Right click and select "Refresh All". The new database will appear.
 3. This project requires a file named "appsettings.json". Create this file at the top level directory of the project (HairSalon.Solution) by typing "touch appsettings.json" into your terminal.
-4. After creating the file, add the follwing code to the file: "{
+4. After creating the file, add the following code to the file: "{
   "ConnectionStrings": {
     "DefaultConnection": "Server=localhost;Port=3306;database="";uid=YOUR_USERNAME_HERE;pwd=YOUR_PASSWORD_HERE;"
   }
