@@ -34,7 +34,6 @@ namespace HairSalon.Controllers
       return RedirectToAction("Index");
     }
 
-    //might have to change "Details" to something else
     public ActionResult Details(int id)
     {
       Stylist thisStylist = _db.Stylists
